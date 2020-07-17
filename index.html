@@ -25,21 +25,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1100, function() {
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-  </script>
+
 
   <!--	favicon -->
 
@@ -77,7 +63,7 @@
 
     body {
       height: auto;
-      background: white;
+      background: black;
       margin: 0px;
       padding: 0px;
       border: 0px;
@@ -86,27 +72,43 @@
       color: #6c5353ff;
     }
 
-    #header {
-      width: ;
-      height: 100%;
-      background-image: linear-gradient(rgb(221, 212, 212), rgb(221, 212, 212));
-      color: beige;
-      text-align: center;
-      margin: 0px;
-      padding-top: 20px;
-      border: solid 0px black;
-    }
 
-    .sub-header {
-      width: ;
-      height: 30%;
-      background: white;
-      color: blue;
-      text-align: center;
-      margin: 0px;
-      padding-top: 20px;
 
-    }
+
+        #header {
+        width: ;
+        height: 100%;
+        background-image: linear-gradient(rgb(232,226,225),  rgb(232,226,225));
+        color: beige;
+        text-align: center;
+        margin: 0px;
+        padding-top: 20px;
+        border: solid 0px black;
+        }
+
+        .videoImg {
+        display: inline;
+        width: 100%;
+        height:auto;
+        margin: auto;
+        float:left;
+        }
+
+        .containerSubHeader {
+        position: relative;
+        height: 200px;
+        margin: 10px;
+        padding: 90px;
+        }
+
+        .sub-header {
+        position: relative;
+        width: ;
+        height: 100%;
+        background: white;
+        color: blue;
+        text-align: center;
+        clear: both; }
 
     video {
       width: 70%;
@@ -533,7 +535,7 @@
       #header {
         width: ;
         height: 100%;
-        background-image: linear-gradient(rgb(227, 219, 219), rgb(237, 230, 230));
+        background-image: linear-gradient(rgb(232,226,225),  rgb(232,226,225));
         color: beige;
         text-align: center;
         margin: 0px;
@@ -808,7 +810,7 @@
       #header {
         width: ;
         height: 100%;
-        background-image: linear-gradient(rgb(227, 219, 219), rgb(237, 230, 230));
+        background-image: linear-gradient(rgb(232,226,225),  rgb(232,226,225));
         color: beige;
         text-align: center;
         margin: 0px;
@@ -1009,7 +1011,7 @@
       #header {
         width: ;
         height: 100%;
-        background-image: linear-gradient(rgb(227, 219, 219), rgb(237, 230, 230));
+        background-image: linear-gradient(rgb(232,226,225),  rgb(232,226,225));
         color: beige;
         text-align: center;
         margin: 0px;
@@ -1517,6 +1519,21 @@
           text-align: center;
     }
       }
+
+
+      /* General mobiles al stack boven elkaar -------------------------------------------------------------------------------------------- */
+  @media screen and (min-width:240px) and (max-width:425px) {
+
+
+    .containerSubHeader {
+        position: relative;
+        height: 200px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    }
+
   </style>
 </head>
 
@@ -1527,28 +1544,31 @@
     </audio>
   </div>
 
-  <div id="header">
-    <video preload="auto" autoplay="autoplay" width="" height=" ">
-      <source src="index7.mov" type="video/mp4">
-    </video> </div>
-  <div class="sub-header" style="color:#6c5353ff;">
-    <div class="container">
-      <h4><i>"Vision is the art of seeing what is invisible to others  "</i></h4>
-      <h6>- Jonathan Swift -</h6>
-      <!--  <a href="#gradblok1">
-     <img src="scr1.png" id="buttonx" ><p></p> </></a> -->
+
+    <div id="header">
+      <img class="videoImg" src="Infinity6LichterBG800-B.gif">
+      </div>
+
+    <div class="sub-header" style="color:#6c5353ff;">
+      <div class="containerSubHeader">
+        <h4><i>"Vision is the art of seeing what is invisible to others  "</i></h4>
+        <h6>- Jonathan Swift -</h6>
+        <!--  <a href="#gradblok1">
+       <img src="scr1.png" id="buttonx" ><p></p> </></a> -->
+      </div>
+      <br>
     </div>
 
-    <br>
-  </div>
-  <div class="contain">
-    <button class="buttonAudio" onclick="pauseAudio()" type="button">
-      Pause audio
-    </button>
-    <button class="buttonAudio" onclick="playAudio()" type="button">
-      Play audio
-    </button>
-  </div>
+
+    <div class="contain">
+      <button class="buttonAudio" onclick="pauseAudio()" type="button">
+        Pause audio
+      </button>
+      <button class="buttonAudio" onclick="playAudio()" type="button">
+        Play audio
+      </button>
+    </div>
+
   <div id="gradblok1">
     <div class="container">
       <div class="row">
@@ -1582,7 +1602,7 @@
 
   <!-- <a href="#gradblok2">
       <img src="scr1.png" id="buttonx2" > </a> -->
-  </div>
+
   <div id="gradblok2">
     <section id="contact">
       <div class="container">
@@ -1611,6 +1631,8 @@
        <img src="scr.png" id="buttonx3" > </a> -->
     <br><br>
   </div>
+
+
   <!-- footer bg col background-color: #6c5353ff --->
   <footer id="footer" style="background-color: #6c5353ff ;">
     <div class="container">
