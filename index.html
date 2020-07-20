@@ -75,51 +75,55 @@
 
 
 
-        #header {
-        width: ;
-        height: 100%;
-        background-image: linear-gradient(rgb(232,226,225),  rgb(232,226,225));
-        color: beige;
-        text-align: center;
-        margin: 0px;
-        padding-top: 20px;
-        border: solid 0px black;
-        }
+     #header {
+            width: ;
+            height: 100%;
+
+
+
+    	background-image: linear-gradient(rgb(232,226,225),  rgb(232,226,225));
+
+            color: beige;
+            text-align: center;
+            margin: 0px;
+            padding-top: 100px;
+padding-bottom: 100px;
+            border: solid 0px black; }
 
         .videoImg {
-        display: inline;
-        width: 100%;
-        height:auto;
-        margin: auto;
-        float:left;
-        }
+            display: ;
+            width: 100%;
+            height:auto;
+            margin: auto;
+            float:left; }
 
         .containerSubHeader {
-        position: relative;
-        height: 200px;
-        margin: 10px;
-        padding: 90px;
-        }
+            position: relative;
+            height: 100px;
+            margin: 0px; 	 	/* dit niet veranderen veroorzaakt gat in flow*/
+            padding: 20px; }
 
         .sub-header {
-        position: relative;
-        width: ;
-        height: 100%;
-        background: white;
-        color: blue;
-        text-align: center;
-        clear: both; }
+            position: relative;
+            width: ;
+            height: 100%;
+            background: white;
+            color: blue;
+            text-align: center;
+            clear: both;
+          padding-top: 50px;
+        padding-bottom: 20px;}
 
-    video {
-      width: 70%;
-      height: ;
-      background: ;
-      color: beige;
-      text-align: center;
-      margin: 0px;
-      padding: 0px;
-      border: solid 0px black;
-    }
+        video {
+          width: 70%;		/*  % kan je evt op ander getal zetten  etc.*/
+          height: ;
+          background: ;
+          color: beige;
+          text-align: center;
+          margin: 0px;
+          padding: 0px;
+          border: solid 0px black; }
+
 
     #gradblok1 {
       height: 70%;
@@ -539,7 +543,7 @@
         color: beige;
         text-align: center;
         margin: 0px;
-        padding-top: 20px;
+        padding-top: 100px;
         border: solid 0px black;
       }
 
@@ -814,7 +818,7 @@
         color: beige;
         text-align: center;
         margin: 0px;
-        padding-top: 20px;
+        padding-top: 100px;
         border: solid 0px black;
       }
 
@@ -1015,7 +1019,6 @@
         color: beige;
         text-align: center;
         margin: 0px;
-        padding-top: 20px;
         border: solid 0px black;
       }
 
@@ -1528,8 +1531,8 @@
     .containerSubHeader {
         position: relative;
         height: 200px;
-        margin: 10px;
-        padding: 20px;
+        margin: 10px 10px -50px 10px;
+        padding: 20px 20px 0 20px;
     }
 
     }
@@ -1539,15 +1542,18 @@
 
 <body>
   <div style="display: none">
-    <audio id="Audio" autoplay loop>
+<audio id="Audio" autoplay="autoplay" loop="">
       <source src="I%20MuvrinATeCorsica.mp3" type="audio/mpeg">
     </audio>
   </div>
 
 
-    <div id="header">
-      <img class="videoImg" src="Infinity6LichterBG800-B.gif">
-      </div>
+  <div id="header">
+  <video preload="auto" autoplay="autoplay" width="" height="" poster="logo.png" >
+  <source src="final.mp4" type="video/mp4">
+
+  </video>
+  </div>
 
     <div class="sub-header" style="color:#6c5353ff;">
       <div class="containerSubHeader">
